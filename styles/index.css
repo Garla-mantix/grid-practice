@@ -11,34 +11,101 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(19, 123, 54);
-    
-}
-
-.footer {
-    background-color: white;
-    width: 80%;
-    justify-items: left;
- 
-}
-
-.mcp {
-    margin-left: 5%;
-    padding: 1em;
-    
-   
 }
 
 .grid-container {
     display: grid;
-    width: 80%;
-    min-height: 80%;
+    width: 100%;
+    min-height: 87%;
     margin-bottom: 0;
-    background-color: black;
+    padding: 1em;
+    grid-gap: 1em;
+    grid-template-columns: repeat(6 1fr);
+    grid-template-rows: repeat(10 1fr);
+    grid-template-areas: 
+    "i1 i1 i4 i4 i7 i7"
+    "i1 i1 i4 i4 i7 i7"
+    "i1 i1 i4 i4 i8 i8"
+    "i2 i2 i4 i4 i8 i8"
+    "i2 i2 i4 i4 i9 i9"
+    "i2 i2 i4 i4 i9 i9"
+    "i3 i3 i5 i10 i10 i11"
+    "i3 i3 i5 i10 i10 i11"
+    "i3 i3 i6 i10 i10 i11"
+    "i3 i3 i6 i10 i10 i11";
+}
+
+.grid-item__1 {
+    grid-area: i1;
+    background-color: #007F5F;
 
 }
 
-/* 
-5 rows
-6 columns
- */
+.grid-item__2 {
+    grid-area: i2;
+    background-color: #2B9348;
+    
+}
+
+.grid-item__3 {
+    grid-area: i3;
+    background-color: #55A630;
+    
+}
+
+.grid-item__4 {
+    grid-area: i4;
+    background-color: #80B918;
+    
+}
+
+.grid-item__5 {
+    grid-area: i5;
+    background-color: #AACC00;
+}
+
+.grid-item__6 {
+    grid-area: i6;
+    background-color: #BFD200;
+}
+
+.grid-item__7 {
+    grid-area: i7;
+    background-color: #DDDF00;
+}
+
+.grid-item__8 {
+    grid-area: i8;
+    background-color: #EEEF20;
+}
+
+.grid-item__9 {
+    grid-area: i9;
+    background-color: #FFFF3F;
+}
+
+.grid-item__10 {
+    grid-area: i10;
+    background-color: #D4D700;
+}
+
+.grid-item__11 {
+    grid-area: i11;
+    background-color: #007F5F;
+}
+
+ .footer {
+    background-color: white;
+    width: 100%;
+    max-height: 15%;
+    justify-items: left;
+    background-color: #9BC1BC;
+}
+
+.mcp {
+    margin-left: 3%;
+    padding: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 3.5em;
+}

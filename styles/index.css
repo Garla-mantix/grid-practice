@@ -38,25 +38,21 @@ main {
 .grid-item__1 {
     grid-area: i1;
     background-color: #007F5F;
-
 }
 
 .grid-item__2 {
     grid-area: i2;
     background-color: #2B9348;
-    
 }
 
 .grid-item__3 {
     grid-area: i3;
     background-color: #55A630;
-    
 }
 
 .grid-item__4 {
     grid-area: i4;
     background-color: #80B918;
-    
 }
 
 .grid-item__5 {
